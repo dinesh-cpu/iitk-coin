@@ -14,6 +14,7 @@ func createUserTable(db *sql.DB) {
 		panic(err)
 	}
 	Table.Exec()
+	fmt.println("FINALDATA table created (if not existed) successfully!")
 }
 func createTransactionTable(db *sql.DB) {
 	table, err := db.Prepare(`CREATE TABLE IF NOT EXISTS EVENTS("sender" INTEGER UNSIGNED NOT NULL,"reciver" INTEGER UNSIGNED NOT NULL,"amount" INTEGER UNSIGNED NOT NULL,"isreward" INTEGER UNSIGNED NOT NULL DEFAULT 0,"date" TEXT NOT NULL);`)
@@ -22,6 +23,7 @@ func createTransactionTable(db *sql.DB) {
 	}
 
 	table.Exec()
+	fmt.println("EVENTS table created (if not existed) successfully!")
 }
 
 func createRedeemTable(db *sql.DB) {
@@ -31,6 +33,7 @@ func createRedeemTable(db *sql.DB) {
 	}
 
 	table.Exec()
+	fmt.println("REDEEM table created (if not existed) successfully!")
 }
 
 func main() {
