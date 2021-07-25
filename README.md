@@ -54,9 +54,9 @@ go build
 Output should look like
 
 ```
-2021/06/20 23:59:40 User Database opened and table created (if not existed) successfully!
-2021/06/20 23:59:40 Transaction Database opened and table created (if not existed) successfully!
-2021/06/20 23:59:40 Wallet Database opened and table created (if not existed) successfully!
+2021/06/20 23:59:40 FINALDATA table created (if not existed) successfully!
+2021/06/20 23:59:40 EVENTS table created (if not existed) successfully!
+2021/06/20 23:59:40 REDEEM table created (if not existed) successfully!
 2021/06/20 23:59:40 Serving at 8080
 ```
 
