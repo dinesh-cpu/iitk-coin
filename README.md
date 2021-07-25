@@ -69,54 +69,58 @@ POST requests take place via `JSON` requests. A typical usage would look like
 
 - `/login` : `POST`
 ```json
-{"name":"<name>", "rollno":"<rollno>", "password":"<password>"}
+{"rollno":"<rollno>", "password":"<password>"}
 ```
 
 - `/signup` : `POST`
 ```json
-{"rollno":"<rollno>", "password":"<password>"}
+{"name":"<username>",rollno":"<user rollno>", "password":"<password>","batch":"<user batch>"}
 ```
 
-- `/reward` : `POST`
+- `/logout` : `POST`
 ```json
-{"rollno":"<rollno>", "coins":"<coins>"}
+
+```
+- `/redeemcoins` : `POST`
+```json
+  {"coin":"<How much coin want to redeem>", "item":"item name"}
 ```
 
-- `/transfer` : `POST`
+- `/acion` : `POST`
 ```json
-{"sender":"<senderRollNo>", "receiver":"<receiverRollNo>", "coins":"<coins>"}
+{"id":"<Id of redeem request>", "action":"<0 or 1>"}
 ```
 
 GET requests:
 
-- `/secretpage` : `GET`
+- `/pendingrequests` : `GET`
 ```bash
-curl http://localhost:8080/secretpage
+curl http://localhost:8080/pendingrequests
 ```
 
-- `/balance` : `GET`
+- `/getcoin` : `GET`
 ```bash
-curl http://localhost:8080/balance?rollno=<rollno>
+curl http://localhost:8080/getcoin
 ```
 
 ## Models
 
--  User
+-  Credentials
 ```go
-	Name     string `json:"name"`
-	Rollno   string  `json:"rollno"`
+	Name     string `json:"username"`
 	Password string `json:"password"`
+	Rollno   int    `json:"rollno"`
+	Batch    string `json:"batch"`
 ```
 
-- RewardPayload
+- Redeem
 ```go
-	Rollno string `json:"rollno"`
-	Coins  int64 `json:"coins,string"`
+	Coin int    `json:"coin"`
+	Item string `json:"item"`
 ```
 
-- TransferPayload
+- Transfercoin=
 ```go
-	SenderRollno   string `json:"sender"`
-	ReceiverRollno string `json:"receiver"`
-	Coins          int64 `json:"coins,string"`
+	Rollno2 int `json:"rollno1"`
+	Coin    int `json:"coin"`
 ```
