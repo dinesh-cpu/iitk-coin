@@ -74,7 +74,7 @@ POST requests take place via `JSON` requests. A typical usage would look like
 
 - `/signup` : `POST`
 ```json
-{"name":"<username>",rollno":"<user rollno>", "password":"<password>","batch":"<user batch>"}
+{"name":"<username>","rollno":"<user rollno>", "password":"<password>","batch":"<user batch>"}
 ```
 
 - `/logout` : `POST`
