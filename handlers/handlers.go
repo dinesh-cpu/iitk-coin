@@ -16,7 +16,7 @@ import (
 	// helpers "github.com/dinesh-cpuiitk-coin/Helpers"
 )
 
-var jwtKey = []byte("dinesh_is_god")
+var jwtKey = []byte("Put jwt key here")
 
 //Schema for user Login
 type Signcred struct {
