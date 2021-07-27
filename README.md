@@ -119,7 +119,7 @@ curl http://localhost:8080/getcoin
 	Item string `json:"item"`
 ```
 
-- Transfercoin=
+- Transfercoin
 ```go
 	Rollno2 int `json:"rollno1"`
 	Coin    int `json:"coin"`
