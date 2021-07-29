@@ -6,9 +6,11 @@ This repository contains the code for the IITK Coin project done so far.
 ### Relevant Links
 
 - [Prposal](https://docs.google.com/document/d/1Jm2pImnVrgxi7Qu-DvHG4wdYIYLJ4IYw4N9uCU-z_t0/edit?usp=sharing)
+- [Docker Image](https://hub.docker.com/r/dineshcpu/iitk-coin)
 - [Poster](https://www.canva.com/design/DAElW0YxGAg/XqLWvQp10V5lCzMTEWRBCQ/view?utm_content=DAElW0YxGAg&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
 - [Midterm Evaluation presentation](https://docs.google.com/presentation/d/1kriN-7A3v1RlXUDL5NETX3roJKRMJInptkWofIxY8dg/edit?usp=sharing)
 - [Midterm Documentation](https://docs.google.com/document/d/1bvOWH4k0U-l2pQ1jLWIDzOkJ2wbHNW4jJw7tMWkUV6o/edit?usp=sharing)
+
 
 ## Table Of Content
 - [Development Environment](#development-environment)
